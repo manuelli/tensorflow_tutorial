@@ -7,7 +7,7 @@ import getpass
 if __name__=="__main__":
     print "building docker container . . . "
     user_name = getpass.getuser()
-    default_image_name = user_name + '-tensorflow'
+    default_image_name = user_name + '_tensorflow'
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--image", type=str,
                         help="name for the newly created docker image", default=default_image_name)
